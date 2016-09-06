@@ -1,0 +1,9 @@
+module.exports = {
+  "host": "YOUR_ENDPOINT.iot.eu-central-1.amazonaws.com",
+  "port": 8883,
+  "clientId": "YOUR_CLIENT_ID",
+  "caPath": "certs/YOUR-rootCA.crt",
+  "certPath": "certs/YOUR-certificate.pem.crt",
+  "keyPath": "certs/YOUR-private.pem.key",
+  "region": "eu-central-1"
+};

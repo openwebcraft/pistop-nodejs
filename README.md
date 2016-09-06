@@ -29,7 +29,27 @@ dtparam=i2c_arm=on
 ## Run
 
 ```sh
-sudo node trafficlights-cylonjs.js
+sudo node blinky-cylonjs.js
+```
+
+```sh
+sudo node blinky-j5.js
+```
+
+### AWS IoT
+
+Copy `device-config.js.dist` to `device-config.js` and adjust config to your AWS IoT setup.
+
+You may want to place certificates and keys into `certs/` directory. 
+
+```sh
+sudo node blinky-j5-aws-iot.js
+```
+
+To toggle the Pi-Stop LEDs you want to subscribe to topic `YOUR_LOWERCASED_CLIENT_ID/pistop` and send messages like:
+
+```JSON
+{ "led": "green", "action": "toggle" }
 ```
 
 ## Documentation

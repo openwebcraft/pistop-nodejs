@@ -39,3 +39,10 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+*.crt
+*.key
+*.pem
+
+device-config.js
+!device-config.js.dist
